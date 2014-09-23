@@ -1,0 +1,22 @@
+{
+    "uuid": "7bde1b06-5087-42c8-8593-e77203bdeca3",
+    "name": "xxx5",
+    "description": "",
+    "baseAlias": "/xxx5",
+    "push": {
+        "providers": [
+            {
+                "type": "GCM",
+                "apiKey": ""
+            },
+            {
+                "type": "APNS",
+                "certificateFile": "",
+                "passphrase": ""
+            }
+        ]
+    },
+    "assets": {
+        "uuid": ""
+    }
+}

@@ -1,0 +1,39 @@
+<ion-nav-back-button class="button-clear">
+    <i class="ion-arrow-left-c"></i> Back
+</ion-nav-back-button>
+<ion-view title="{{name}}">
+    <ion-content class="has-header=" padding="true">
+        <div class="list">
+            
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">title</span>
+                    <input type="text" ng-model="todo['title']"/>
+                </label>
+            
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">order</span>
+                    <input type="text" ng-model="todo['order']"/>
+                </label>
+            
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">completed</span>
+                    <input type="text" ng-model="todo['completed']"/>
+                </label>
+            
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">_id</span>
+                    <input type="text" ng-model="todo['_id']"/>
+                </label>
+            
+        </div>
+    </ion-content>
+</ion-view>
+<ion-nav-buttons side="right">
+    <button style="float:left; margin: 0 5px 0 0;" class="button button-dark" ng-click="cancel()">
+        Cancel
+    </button>
+    <button class="button button-positive" ng-click="save()">
+        Save
+    </button>
+
+</ion-nav-buttons>

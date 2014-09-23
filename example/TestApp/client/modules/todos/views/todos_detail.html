@@ -1,0 +1,35 @@
+<ion-nav-back-button class="button-clear">
+    <i class="ion-arrow-left-c"></i> Back
+</ion-nav-back-button>
+<ion-view title="Detail" right-buttons="rightButtons">
+    <ion-content class="has-header" padding="true">
+        <ion-list class="list">
+                
+                    <div class="item item-button-right">
+                        title: <strong>{{todo.attributes['title']}}</strong>
+                    </div>
+                
+                    <div class="item item-button-right">
+                        order: <strong>{{todo.attributes['order']}}</strong>
+                    </div>
+                
+                    <div class="item item-button-right">
+                        completed: <strong>{{todo.attributes['completed']}}</strong>
+                    </div>
+                
+                    <div class="item item-button-right">
+                        _id: <strong>{{todo.attributes['_id']}}</strong>
+                    </div>
+                
+        </ion-list>
+
+    </ion-content>
+</ion-view>
+
+<ion-nav-buttons side="right">
+    <button class="button" ng-click="edit(todo.attributes['_id'])">
+        Edit
+    </button>
+</ion-nav-buttons>
+
+
