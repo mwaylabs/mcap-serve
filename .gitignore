@@ -5,3 +5,4 @@ npm-debug.log
 .DS_Store
 .idea
 run.js
+atlassian-ide-plugin.xml

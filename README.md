@@ -16,6 +16,7 @@ var mcapServe = require('./lib/mcap-serve');
 mcapServe({
     root: './example/TestApp/client',
     enableLivereload: true,
+    port:9200,
     endpoint: 'http://localhost:8079/mway/appTest/api'
 });
 ```
@@ -24,5 +25,5 @@ mcapServe({
 
 ```bash
 node example/run.js
-open http://localhost:8080/
+open http://localhost:9200/
 ```
