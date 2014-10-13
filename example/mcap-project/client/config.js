@@ -1,8 +1,5 @@
   "use strict";
   angular.module('config',[])
-    .value('baseUrl','hasdf')
+    .value('baseUrl','')
     .value('apiEndpoint','')
-    .value('version','23');
-
-
-    console.log("hier");
+    .value('version','1.0.0');
