@@ -50,11 +50,3 @@ gulp.task('test', ['lint', 'istanbul']);
 gulp.task('release', ['bump']);
 
 gulp.task('default', ['test']);
-
-gulp.task('serve', function () {
-    var mcapServe = require('./lib/mcap-serve');
-    mcapServe({
-        root: './example/TestApp/client',
-        enableLivereload: true
-    });
-});

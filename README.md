@@ -13,11 +13,13 @@ $ npm install mcap-serve
 
 ```javascript
 var mcapServe = require('./lib/mcap-serve');
+
 mcapServe({
-    root: './example/TestApp/client',
+    root: './example/MyApp/client',
     enableLivereload: true,
-    port:9200,
-    endpoint: 'http://localhost:8079/mway/appTest/api'
+    port: 8081,
+    open: true,
+    endpoint: 'http//mcap.com/mway/MyApp/api'
 });
 ```
 
